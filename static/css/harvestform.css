@@ -1,0 +1,128 @@
+body, html {
+			font-family: Arial, Verdana, Helvetica, sans-serif;
+			font-size: 18px;
+			line-height: 1.5;
+			margin: 0;
+			padding: 0;
+			background: url("./img/kimani_maruge.jpg") center no-repeat;
+			background-size: cover;
+			background-attachment: fixed;
+		}
+		#main {
+			margin: 0;
+			padding: 0;
+			background: rgba(00,00,99,0.5);
+		}
+
+		#title, #description {
+			width: 60%;
+			margin: 0 auto;
+			text-align: center;
+			background-color: dodgerblue;
+			color: #ffffff;
+			font-weight: bold;
+			padding: 16px 30px 8px;
+		}
+		form p {
+			text-align: left;
+			margin: 20px 0px 0px 0px;
+			width: auto;
+			padding-left: 0px; 
+		}
+		form {
+			width: 60%;
+			margin: 0 auto;
+			padding: 30px;
+			display: flex;
+			flex-direction: column;
+			background: #646464;
+			font-size: 18px;
+			color: #ffffff;
+		}
+
+		fieldset {
+			border: 2px solid rgba(00,00,99,0.5);
+			border-radius: 5px;
+			margin-top: 12px;
+		}
+
+		input[type="text"], input[type="email"], input[type="number"], #dropdown {
+			padding: 8px;
+			border-radius: 5px;
+		}
+		label not-first-child {
+			padding-top: 10px;
+		}
+		#email-label, #number-label {
+			margin-top: 25px
+		}
+		input[type="radio"] {
+			padding: 8px;
+			margin-top: 4px;
+		}
+		input[type="checkbox"] {
+			padding: 8px 12px;
+			margin-top: 6px;
+			width: auto;
+		}
+		textarea {
+			margin-top: 8px;
+			padding: 14px 8px;
+			border-radius: 5px;
+			min-height: 100px;
+		}
+		#dropdown {
+			width: auto;
+			margin-top: 4px;
+		}
+		#submit {
+			margin-top: 20px;
+			padding-top: 18px;
+			padding-bottom: 18px;
+			background: dodgerblue;
+			color: #ffffff;
+			font-weight: bold;
+			border: 0;
+			border-radius: 5px;
+		}
+		#submit:hover {
+			cursor: pointer;
+			background: rgba(0,0,99,0.5);
+		}
+
+		/*mobile design*/
+		@media screen and (max-width: 768px) {
+			body, html {
+				
+				margin: 0;
+				padding: 0;
+				background: #646464;
+			}
+			#main {
+				background: #646464;
+			}
+			header {
+				margin: 0 auto;
+			}
+			#title, #description {
+				width: inherit;
+				margin: 0;
+				font-size: 20px;
+			}
+			#survey-form {
+				width: 96%;
+				margin: 0 auto;
+				padding: 0;
+			}
+			fieldset {
+				border: 2px dodgerblue solid;
+			}
+			#comments {
+				min-height: 70px;
+			}
+			#submit {
+				margin: 12px auto;
+				width: 100%;
+				bottom: 8px;
+			}
+		}

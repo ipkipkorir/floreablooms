@@ -1,0 +1,47 @@
+#about-main {
+	margin-top: 120px;
+	display: flex;
+	flex-direction: row;
+	width: 85%;
+	min-height: 100vh;
+	margin-right: auto;
+	margin-left: auto;
+}
+#about-main-section {
+	display: flex;
+	flex-direction: column;
+	margin-right: auto;
+	margin-left: auto;
+}
+#about-main-section .farms {
+	margin: 20px auto 55px auto;
+	width: 58%;
+	padding: 4px;
+}
+#about-main-section .farms .about-image-box {
+	width: 100%;
+
+}
+#about-main-section .farms img{
+	width: 100%;
+	margin: auto;
+	box-shadow: 2px 4px 8px #333;
+}
+
+
+/************************************
+Mdeia queries - upto 768px of width
+*************************************/
+@media all and (max-width: 768px) {
+	#about-main {
+		width: 98%;
+	}
+	#about-main-section .farms {
+		margin: 20px auto 55px auto;
+		width: 98%;
+		padding: 8px;
+	}
+	#about-main-section .farms img{
+		width: 96%;
+	}
+}

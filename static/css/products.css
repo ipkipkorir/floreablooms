@@ -1,0 +1,104 @@
+#product-main {
+	margin-top: 125px;
+	width: 100%;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	margin-left: auto;
+	margin-right: auto;
+}
+#product-main h1 {
+	text-align: center;
+	padding: 8px;
+	text-shadow: 2px 4px 6px #333;
+}
+
+/*filter buttons*/
+#btn-container {
+	margin: 0 auto;
+}
+#btn-container .btn {
+	padding: 12px 16px;
+	outline: none;
+	border: none;
+	background-color: #ccc;
+	cursor: pointer;
+}
+#btn-container .btn:hover {
+	background-color: #333;
+	color: #fff;
+}
+#btn-container .btn.active {
+	background-color: #666;
+	color: #fff;
+}
+
+/*products displayed*/
+#products-container {
+	margin: 0 auto;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	top: 245px;
+	width: 85%;
+	align-self: center;
+}
+#products-container .content-container {
+	width: 30%; 
+	margin: 14px auto; 
+	box-shadow: 2px 4px 8px #111;
+	background-color: #fff;
+	display: flex;
+	flex-direction: column;
+	padding: 12px;
+}
+#products-container .content-container img {
+	width: 70%; 
+	margin: 4px auto;
+}
+#products-container .content-container img:hover {
+	width: 100%;
+	cursor: pointer;
+}
+#products-container .show {
+	display: flex;
+}
+#products-container .content-container.crysanthemums img,
+#products-container .content-container.gypsophila img,
+#products-container .content-container.eucalyptus img {
+	width: 100%;
+}
+
+/*blank space on the bottom */
+#products-page-bottom {
+	width: 100%; 
+	min-height: 40vh; 
+	background-color: #f0f0f0; 
+	margin-top: 40px;
+}
+
+/******************************
+Media queries
+*******************************/
+@media screen and (max-width: 768px) {
+	#product-main {
+		width: 98%;
+		min-height: 800vh;
+		position: relative;
+	}
+	#products-container {
+		display: flex;
+		flex-direction: column;
+		width: 92%;
+	}
+	#products-container .content-container {
+		width: 100%;
+	}
+	#products-container .content-container img {
+		width: 90%; 
+		margin: 4px auto;
+	}
+	#btn-container .btn {
+		margin: 2px;
+	}
+}
