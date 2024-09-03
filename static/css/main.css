@@ -28,13 +28,13 @@ Header
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	border-bottom: rgb(165,42,42) 1px solid;
+	border-bottom: #36454f 1px solid;
 	z-index: 2;
 }
 .container-support {
 	position: absolute;
 	width: 100%;
-	background: rgb(165,42,42);
+	background: #36454f;
 	z-index: 3;
 	top: 0px;
 	height: 35px;
@@ -42,15 +42,15 @@ Header
 	justify-content: flex-end;
 }
 .container-support a {
-	color: #f4f4f4;
+	color: #dfdfdf;
 	text-decoration: none;
 	padding: 5px 20px;
-	font-size: 15px;
+	font-size: 0.9375rem;
 }
 
 .container-support a:hover {
-	background-color: rgb(70,70,70);
-	color: #fff;
+	background-color: #cecece;
+	color: #222;
 }
 .container-header {
 	position: absolute;
@@ -108,8 +108,8 @@ Header
 	font-weight: bold;
 }
 #nav-bar a:hover {
-	background-color: #333;
-	color: #fff;
+	background-color: #36454f;
+	color: #cecece;
 }
 .icon-menu,
 #nav-bar .close-menu {
@@ -128,6 +128,7 @@ Main styling
 }
 #banner {
 	position: relative;
+	overflow: hidden;
 	top: 100px;
 	width: 100%;
 	height: 100vh;
@@ -137,33 +138,43 @@ Main styling
 /******************
 Slide Show On Banner
 *******************/
-#banner .slideshow {
-	position: relative;
+.slideshow {
+	position: absolute; border: #000 solid 2px;
+	top: auto;
 	height: 100vh;
+	width: 100%;
+	transition: opacity 2s ease-in-out; 
+	display: none;
 }
-#banner .slideshow-img {
+.active {
+	display: block;
+}
+.slideshow-img {
 	position: absolute;
-	top: -237px;
+	top: auto;
 	left: 0;
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
-	opacity: 0;
-	transition: opacity 1s ease-in-out;
+	transition: opacity 2s ease-in-out;
 }
 
 
 /*******************
 Banner text
 *******************/
-#banner .brand-text {
-	position: relative;
-	z-index: 1;
+#banner .slideshow-text {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
 }
+
 #banner .products-cat {
 	position: relative;
 	top: -650px;
-	font-size: 28px;
+	font-size: 1.75rem;
 	color: #fff;
 	font-family: sans-serif;
 }
@@ -178,7 +189,7 @@ Banner text
 	padding: 22px;
 }
 .banner .banner-header-text h1 {
-	font-size: 48px;
+	font-size: 3rem;
 	color: #ffd700;
 }
 .banner .banner-header-text a {
@@ -215,7 +226,7 @@ Bottom of slides text
 	background-color: rgba(0,0,0,0.35);
 	box-shadow: 2px 4px 8px #444;
 	text-shadow: 2px 4px 8px #000;
-	font-size: 18px;
+	font-size: 1.125rem;
 	font-family: palatino linotype, sans-serif;
 	color: rgb(216,255,0);
 	font-weight: bolder;
@@ -224,7 +235,7 @@ Bottom of slides text
 }
 .bottom-description-bar span {
 	padding: 4px 18px;
-	font-size: 32px;
+	font-size: 2rem;
 	text-shadow: 4px 6px 8px #111;
 	border-radius: 50%;
 	background-color: rgba(0,0,0,0.5);
@@ -311,7 +322,7 @@ Products section
 	text-align: left;
 }
 #products .product-content h1 {
-	font-size: 2.5em;
+	font-size: 2.5rem;
 	color: #307767;
 }
 #products .product-content p {
@@ -319,13 +330,13 @@ Products section
 	font-size: 1.25em;
 }
 #products .product-content ul {
-	font-size: 17px;
+	font-size: 1.0625rem;
 	margin-left: 28px;
 	padding: 2px;
 }
 #products .product-content a{
 	width: 30%;
-	font-size: 1em;
+	font-size: 1rem;
 	background: rgb(120,42,42);
 	color: #fff;
 	border: #ffd700 2px solid;
@@ -334,7 +345,7 @@ Products section
 }
 #products .product-content a:hover {
 	cursor: pointer;
-	font-size: 1.1em;
+	font-size: 1.1rem;
 	width: 33%;
 }
 #products [safety-structures],
@@ -432,7 +443,7 @@ bottom section
 #bottom .partners-header h1 {
 	text-align: center;
 	padding: 20px;
-	font-size: 2em;
+	font-size: 2rem;
 	color: #000;
 	margin: 0 auto;
 }
@@ -458,7 +469,7 @@ bottom section
 Footer styling
 **********************/
 #footer {
-	background: maroon;
+	background: #36454f;
 	background-size: cover;
 	width: 100%;
 	min-height: 300px;
@@ -550,16 +561,16 @@ Media query: Less than 768px;
 		line-height: 1.5;
 	}
 	.banner .banner-header-text h1 {
-		font-size: 32px;
+		font-size: 2rem;
 		color: #ffd700;
 	}
 	#banner .banner-header-text p {
 		margin-top: 90px;
 		color: #f4f4f4;
-		font-size: 20px;
+		font-size: 1.25rem;
 	}
 	#banner .contact-us-btn {
-		font-size: 20px;
+		font-size: 1.25rem;
 		position: relative;
 		bottom: -80px;
 	}
