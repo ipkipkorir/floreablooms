@@ -27,7 +27,7 @@ Slideshow animation
 /**Select all images and hold them in a constant variable **/
 /**Set the delay time and the slide-div counter**/
 const slide_show_div = document.querySelectorAll('.banner .slideshow')
-const next_slide_delay = 4000;
+const next_slide_delay = 5000;
 let current_slide_counter = 0;
 
 /**Display the slides one at a time**/
