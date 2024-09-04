@@ -139,7 +139,7 @@ Main styling
 Slide Show On Banner
 *******************/
 .slideshow {
-	position: absolute; border: #000 solid 2px;
+	position: absolute;
 	top: auto;
 	height: 100vh;
 	width: 100%;
@@ -171,14 +171,16 @@ Banner text
 	text-align: center;
 }
 #banner .slideshow-text h1 {
-	color: #d8be17;
+	color: #ffd700;
 	text-shadow: 2px 2px #000;
 	font-size: 4.5rem;
+	font-weight: bold;
 }
 #banner .slideshow-text p {
 	font-size: 1.9rem;
-	color: #e0d7d7;
+	color: #ffd700;
 	text-shadow: 2px 2px #000;
+	font-weight: bold;
 }
 #banner .products-cat {
 	position: relative;
@@ -220,7 +222,7 @@ Banner text
 /**************************
 Bottom of slides text
 *************************/
-.bottom-description-bar {
+/* .bottom-description-bar {
 	display:flex; 
 	flex-direction: row; 
 	flex-wrap: wrap; 
@@ -248,7 +250,7 @@ Bottom of slides text
 	text-shadow: 4px 6px 8px #111;
 	border-radius: 50%;
 	background-color: rgba(0,0,0,0.5);
-}
+} */
 /*****************************
 
 
@@ -301,21 +303,29 @@ Products section
 ******************************/
 #products {
 	display: flex;
-	flex-direction: column;
+	flex-direction: row;
+	flex-wrap: wrap;
+	margin: auto;
 }
 #products .box-products {
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
 	margin-bottom: 40px;
 	margin-top: 70px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 32%;
+	background-color: #fff;
+	box-shadow: 2px 4px 8px #444;
 }
 #products .box-products .product-img {
-	margin: 20px 20px;
-	width: 50%;
+	margin: 20px auto;
+	width: 90%;
 }
 #products img {
 	width: 100%;
-	box-shadow: 2px 4px 8px #444;
+	
+	/* box-shadow: 2px 4px 8px #444; */
 }
 #products .product-content {
 	margin: 20px;
@@ -331,12 +341,12 @@ Products section
 	text-align: left;
 }
 #products .product-content h1 {
-	font-size: 2.5rem;
+	font-size: 2rem;
 	color: #307767;
 }
 #products .product-content p {
 	text-shadow: 2px 4px 8px #ccc;
-	font-size: 1.25em;
+	font-size: 1.0625rem;
 }
 #products .product-content ul {
 	font-size: 1.0625rem;
