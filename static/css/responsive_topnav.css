@@ -23,7 +23,7 @@ Media query: Less than 768px;
 		position: fixed;
 		top: 100px;
 		z-index: 4; 
-		background: rgb(67,67,67);
+		background: rgb(54, 69,79);
 	}
 	#nav-bar a {
 		align-items: flex-start;
