@@ -561,7 +561,7 @@ Media query: Less than 768px;
 		height: auto;
 		justify-content: flex-start;
 	}
-	#logo-image img{
+	#logo-image img {
 		margin-top: 0;
 		margin-left: 0;
 		width: 30%;
@@ -577,7 +577,8 @@ Media query: Less than 768px;
 		padding: 2px 14px; 
 		font-size: 0.825rem;
 	}
-	.container-support a.facebook_cont {
+	.container-support a.facebook_cont,
+	.container-support a.email_cont {
 		display: none;
 	}
 
