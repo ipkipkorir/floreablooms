@@ -56,6 +56,10 @@
 	width: 70%; 
 	margin: 4px auto;
 }
+#products-container .content-container.alstromeria img {
+	width: 100%;
+	margin: 4px auto;
+}
 #products-container .content-container img:hover {
 	width: 100%;
 	cursor: pointer;
