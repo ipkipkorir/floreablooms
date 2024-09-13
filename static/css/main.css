@@ -34,7 +34,7 @@ Header
 .container-support {
 	position: absolute;
 	width: 100%;
-	background: #36454f;
+	background: rgba(40,68,32);
 	z-index: 3;
 	top: 0px;
 	height: 35px;
@@ -501,7 +501,7 @@ bottom section
 Footer styling
 **********************/
 #footer {
-	background: #36454f;
+	background: rgba(40,68,32);
 	background-size: cover;
 	width: 100%;
 	min-height: 300px;
